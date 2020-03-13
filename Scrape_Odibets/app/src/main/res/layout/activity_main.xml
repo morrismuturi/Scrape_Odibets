@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/getBtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:text="@string/get_website"
+        />
+    <TextView
+        android:layout_marginTop="300dp"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_marginTop="200dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/mytable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:stretchColumns="*"
+            android:layout_weight="1"
+            android:shrinkColumns="*"
+            android:padding="10dip"
+            android:divider="@color/colorAccent"
+            android:showDividers="middle"
+
+            />
+    </ScrollView>
+</RelativeLayout>
